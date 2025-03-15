@@ -12,9 +12,17 @@ async function getBooks() {
   .select('*')
 
     for (let book of books) {
-        let bookList = document.getElementById('books');
-        bookList.innerHTML += `<li>${book.title} - ${book.author} - ${book.isbn}</li>`;
+       const row = document.createElement('tr');
+
+       row.innerHTML = `
+           <td>${book.title}</td>
+           <td>${book.author}</td>
+           <td>${book.isbn}</td>
+       `;
+
+       bookTableBody.appendChild(row);
     }
 }
 
 getBooks();
+
