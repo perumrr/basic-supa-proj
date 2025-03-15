@@ -1,6 +1,6 @@
 body {
     background-color: #121212;
-    color: #e0e0e0;
+    color: #e0e0e0; 
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -11,28 +11,46 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #ffffff; 
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
-}
-
-ul#books {
-    list-style: none;
-    padding: 0;
-    width: 80%;
-    max-width: 500px;
-}
-
-ul#books li {
-    background-color: #1e1e1e;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-
-h1 {
     margin-bottom: 20px;
 }
+
+table {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #333;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 2px solid #555;
+}
+
+td {
+    background-color: #1e1e1e;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #444;
+}
+
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+td, th {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
