@@ -10,6 +10,13 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 ul#books {
     list-style: none;
     padding: 0;
@@ -22,13 +29,9 @@ ul#books li {
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
     transition: 0.3s;
 }
 
-ul#books li:hover {
-    background-color: #292929;
-}
 
 h1 {
     margin-bottom: 20px;
