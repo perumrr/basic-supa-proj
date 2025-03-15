@@ -1,4 +1,3 @@
-
 import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js@2.7.1'
 
 const supabaseUrl = 'https://ccbvauyhuwfvrotpfoxd.supabase.co'
@@ -10,6 +9,8 @@ async function getBooks() {
     let { data: books, error } = await supabase
   .from('books')
   .select('*')
+
+    const bookTableBody = document.querySelector('#books tbody');
 
     for (let book of books) {
        const row = document.createElement('tr');
@@ -25,4 +26,3 @@ async function getBooks() {
 }
 
 getBooks();
-
